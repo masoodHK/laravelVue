@@ -14,9 +14,8 @@
         @endif
 
         <div class="content container" id="app">
+            <navbar></navbar>
             <temp></temp>
-            <hr>
-            <example></example>
         </div>
     </div>
 @endsection
