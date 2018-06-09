@@ -16,6 +16,7 @@
         <div class="content container" id="app">
             <navbar></navbar>
             <temp></temp>
+            <example></example>
         </div>
     </div>
 @endsection
