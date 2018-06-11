@@ -1,6 +1,6 @@
 html, body {
-    background-color: #fff;
-    color: #636b6f;
+    background-color: #222;
+    color: #dddddd;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
     height: 100vh;
@@ -20,7 +20,7 @@ nav > ul {
 .flex-center {
     align-items: center;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .position-ref {
@@ -42,7 +42,7 @@ nav > ul {
 }
 
 .links > a {
-    color: #636b6f;
+    color: #dddddd;
     padding: 0 25px;
     font-size: 12px;
     font-weight: 600;
