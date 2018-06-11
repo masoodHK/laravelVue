@@ -1,7 +1,7 @@
 @extends('default.app')
 
 @section('title')
-    <title>vueLaravel</title>
+    <title>vlChat</title>
 @endsection
 
 @section('content')
@@ -17,8 +17,7 @@
             </div>
         @endif
 
-        <div class="content container" id="app">
-            <navbar></navbar>
+        <div class="content container">
             <temp></temp>
             <example></example>
         </div>

@@ -13,4 +13,8 @@ class Controller extends BaseController{
     public function view() {
     	return view('welcome');
     }
+
+    public function chat() {
+    	return view('chatroom');
+    }
 }

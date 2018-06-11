@@ -12,3 +12,4 @@
 */
 
 Route::get('/', 'Controller@view');
+Route::get('/chats', 'Controller@chat');
