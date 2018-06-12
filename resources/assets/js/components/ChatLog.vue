@@ -1,6 +1,6 @@
 <template lang="html">
   <div class="chat-log container">
-      <chat-message v-for="message in messages" :message="message"></chat-message>
+      <chat-message v-for="message in messages" :message="message" :key="message.user"></chat-message>
   </div>
 </template>
 
@@ -13,7 +13,15 @@
                     {
                         message: "test",
                         user: "Mark"
-                    }
+                    },
+                    {
+                        message: "testing",
+                        user: "Sam"
+                    },
+                    {
+                        message: "test",
+                        user: "Mark"
+                    },
                 ]
             }
         }
