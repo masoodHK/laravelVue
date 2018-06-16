@@ -23,15 +23,16 @@
         }
     }
 </script>
-<style>
+
+<style lang="css">
     .chat-input {
         display: flex;
     }
     .chat-input > input {
-        flex: 1;
-        align-items: stretch;
+        flex: 1 auto;
+        color: #222;
     }
-    .chat-input > button {
+    .chat-input button {
         border-radius: 0;
     }
 </style>

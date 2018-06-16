@@ -1413,7 +1413,21 @@ Vue.component('chat-composer', __webpack_require__(55));
 Vue.component('temp', __webpack_require__(60));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app',
+    data: {
+        messages: [{
+            message: 'Hey!',
+            user: "John Doe"
+        }, {
+            message: 'Hello!',
+            user: "Jane Doe"
+        }]
+    },
+    methods: {
+        addMessage: function addMessage(message) {
+            this.messages.push(message);
+        }
+    }
 });
 
 /***/ }),
@@ -43860,20 +43874,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-    data: function data() {
-        return {
-            messages: [{
-                message: "test",
-                user: "Mark"
-            }, {
-                message: "testing",
-                user: "Sam"
-            }, {
-                message: "test",
-                user: "Mark"
-            }]
-        };
-    }
+    props: ['messages']
 });
 
 /***/ }),
@@ -43889,7 +43890,7 @@ var render = function() {
     { staticClass: "chat-log container" },
     _vm._l(_vm.messages, function(message) {
       return _c("chat-message", {
-        key: message.user,
+        key: message.message,
         attrs: { message: message }
       })
     })
@@ -43991,7 +43992,7 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "\n.chat-input {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.chat-input > input {\n    -webkit-box-flex: 1;\n        -ms-flex: 1;\n            flex: 1;\n    -webkit-box-align: stretch;\n        -ms-flex-align: stretch;\n            align-items: stretch;\n}\n.chat-input > button {\n    border-radius: 0;\n}\n", ""]);
+exports.push([module.i, "\n.chat-input {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n}\n.chat-input > input {\n    -webkit-box-flex: 1;\n        -ms-flex: 1 auto;\n            flex: 1 auto;\n    color: #222;\n}\n.chat-input button {\n    border-radius: 0;\n}\n", ""]);
 
 // exports
 

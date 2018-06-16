@@ -22,5 +22,22 @@ Vue.component('chat-composer', require('./components/ChatComposer'));
 Vue.component('temp', require('./components/TempDisplay'));
 
 const app = new Vue({
-    el: '#app'
+    el: '#app',
+    data: {
+        messages: [
+            {
+                message: 'Hey!',
+                user: "John Doe"
+            },
+            {
+                message: 'Hello!',
+                user: "Jane Doe"
+            }
+        ]
+    },
+    methods: {
+        addMessage(message) {
+            this.messages.push(message);
+        }
+    }
 });
